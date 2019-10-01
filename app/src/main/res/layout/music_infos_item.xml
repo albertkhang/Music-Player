@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/background"
+    android:id="@+id/clItemLayout"
+
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <com.example.demo_19.model.RoundCornerImageView
+        android:id="@+id/imgThumbnailItem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/ic_emty_thumbnail"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtSongItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song"
+        android:textColor="@color/song_name"
+        android:textSize="18sp"
+        android:layout_marginLeft="14dp"
+        android:maxLength="26"
+
+        app:layout_constraintBottom_toTopOf="@id/txtSingerItem"
+        app:layout_constraintLeft_toRightOf="@id/imgThumbnailItem"/>
+
+    <TextView
+        android:id="@+id/txtSingerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singer"
+        android:textColor="@color/singer"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imgThumbnailItem"/>
+
+    <TextView
+        android:id="@+id/txtDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/singer"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

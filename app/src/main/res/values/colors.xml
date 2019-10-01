@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="gray">#bdc3c7</color>
+
+    <color name="zing_mp3">#9557dc</color>
+    <color name="song_name">#dadce8</color>
+    <color name="singer">#8384a0</color>
+    <color name="zm_background">#242633</color>
+    <color name="background">#13161f</color>
+    <color name="background_bright">#1F2A42</color>
+</resources>
